@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display:flex;
+    flex-direction: column;
+    height: 60%;
+    width: 30%;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 10%;
+  
+}
+
+.info {
+   height: 40%;
+   width: 100%;
+   background-color: green;
+   display: flex;
+}
+
+.logo-container {
+    display: flex;
+    padding: 4px;
+    background-color: red;
+    border-radius: 50%;
+
+}
+
+#logo {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    text-align: end;
+    padding-top: 70px;
+    /* justify-content: end; */
+    /* justify-items: end; */
+}
+.submit {
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    gap: 10px;
+}
+.button {
+    height: 25px;
+    width: 70px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    height:30px ;
+    width: 75px;
+    background-color:lightgreen;
+
+}
+
+.input {
+    height: 25px;
+    width: 150px;
+    border-radius: 5px;
+}
