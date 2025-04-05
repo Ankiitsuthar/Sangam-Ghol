@@ -6,13 +6,15 @@
     <title>Sangam Ghol - Your Complete Marriage Service Provider</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://kit.fontawesome.com/YOUR_KIT_CODE.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
+
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
                 <div class="logo-image">
-                    <img src="./images/New_Logo.svg" alt="Idli Sambar Logo">
+                    <img src="./assets/images/New_Logo.svg" alt="Idli Sambar Logo">
                 </div>
                 <h1>Sangam Ghol</h1>
             </div>
@@ -32,8 +34,9 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
+            <!-- <img src="./images/Sangam_Banner.jpg" alt="bg-img"> -->
             <h1>Welcome to Sangam Ghol</h1>
-            <p>Your premier destination for all marriage and event needs</p>
+            <p>Your premier destination for all Ghols(Khiru) and Coconut Chutney needs</p>
             <div class="hero-buttons">
                 <a href="#booking" class="btn primary">Book Now</a>
                 <a href="#services" class="btn secondary">Our Services</a>
@@ -50,7 +53,7 @@
                         <i class="fas fa-gift"></i>
                     </div>
                     <h3>Items Booking</h3>
-                    <p>Book decor items, outfits, and accessories for your special day</p>
+                    <p>Book fresh Ghol(Khiru), Chutneys, and Masalas for your home, Shops, weddings, and special events.</p>
                     <a href="#booking" class="service-link">Book Items</a>
                 </div>
                 <div class="service-card">
@@ -58,7 +61,7 @@
                         <i class="fas fa-calendar-check"></i>
                     </div>
                     <h3>Appointments</h3>
-                    <p>Schedule consultations with our expert wedding planners</p>
+                    <p>Schedule a Appointment for bulk orders for weddings and events.</p>
                     <a href="#booking" class="service-link">Book Appointment</a>
                 </div>
                 <div class="service-card">
@@ -66,17 +69,17 @@
                         <i class="fas fa-ring"></i>
                     </div>
                     <h3>Marriage Packages</h3>
-                    <p>Complete wedding packages for a hassle-free experience</p>
+                    <p>Complete wedding Ghol packages for a hassle-free experience</p>
                     <a href="#booking" class="service-link">Book Package</a>
                 </div>
-                <div class="service-card">
+                <!-- <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-utensils"></i>
                     </div>
                     <h3>Catering</h3>
                     <p>Delicious catering options for your wedding events</p>
                     <a href="#booking" class="service-link">Book Catering</a>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -98,10 +101,9 @@
                                     <label for="item-category">Category</label>
                                     <select id="item-category" name="category" required>
                                         <option value="">Select Category</option>
-                                        <option value="decor">Decor Items</option>
-                                        <option value="outfit">Wedding Outfits</option>
-                                        <option value="jewelry">Jewelry</option>
-                                        <option value="accessories">Accessories</option>
+                                        <option value="Ghol">Ghol (Khiru)</option>
+                                        <option value="ChutneySambarPaste">Sp. Coconut Chutney & Sambar Past</option>
+                                        <option value="SambarMasala">Sambar Masala</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
@@ -122,7 +124,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="item-notes">Special Instructions</label>
+                                <label for="item-notes">Special Instructions Ghol(Khiru) in kg</label>
                                 <textarea id="item-notes" name="notes" rows="3"></textarea>
                             </div>
                             <button type="submit" class="btn primary">Book Item</button>
@@ -135,10 +137,10 @@
                                     <label for="appointment-type">Appointment Type</label>
                                     <select id="appointment-type" name="type" required>
                                         <option value="">Select Type</option>
-                                        <option value="consultation">Wedding Consultation</option>
-                                        <option value="planning">Wedding Planning</option>
-                                        <option value="tasting">Food Tasting</option>
-                                        <option value="venue">Venue Visit</option>
+                                        <option value="Wedding">Wedding</option>
+                                        <option value="Birthday">Birthday</option>
+                                        <option value="Vendor">Shop & Vendor</option>
+                                        <option value="Other">Other Functions</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
@@ -146,7 +148,29 @@
                                     <input type="date" id="appointment-date" name="date" required>
                                 </div>
                             </div>
+
                             <div class="form-row">
+                                <div class="form-group">
+                                    <label for="item-category">Category</label>
+                                    <select id="item-category" name="category" required>
+                                        <option value="">Select Category</option>
+                                        <option value="Ghol">Ghol (Khiru)</option>
+                                        <option value="ChutneySambarPaste">Sp. Coconut Chutney & Sambar Past</option>
+                                        <option value="SambarMasala">Sambar Masala</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="item-name">Item Name</label>
+                                    <select id="item-name" name="itemName" required>
+                                        <option value="">Select Item</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+
+
+                            <!-- <div class="form-row">
                                 <div class="form-group">
                                     <label for="appointment-time">Preferred Time</label>
                                     <input type="time" id="appointment-time" name="time" required>
@@ -155,7 +179,7 @@
                                     <label for="appointment-guests">Number of Guests</label>
                                     <input type="number" id="appointment-guests" name="guests" min="1" required>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="form-group">
                                 <label for="appointment-notes">Special Requirements</label>
                                 <textarea id="appointment-notes" name="notes" rows="3"></textarea>
@@ -215,55 +239,55 @@
             <h2 class="section-title">Our Gallery</h2>
             <div class="gallery-filters">
                 <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="decor">Decor</button>
-                <button class="filter-btn" data-filter="venues">Venues</button>
-                <button class="filter-btn" data-filter="outfits">Outfits</button>
-                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="Ghol">Ghol (Khiru)</button>
+                <button class="filter-btn" data-filter="Chutney">Sp. Coconut Chutney</button>
+                <button class="filter-btn" data-filter="Paste">Sp. Sambar Paste</button>
+                <button class="filter-btn" data-filter="Masala">Sambar Masala</button>
             </div>
             <div class="gallery-grid">
                 <!-- Gallery items will be dynamically loaded here -->
-                <div class="gallery-item" data-category="decor">
-                    <img src="/api/placeholder/300/200" alt="Decor Item">
+                <div class="gallery-item" data-category="Ghol">
+                    <img src="./assets/images/Ghol.jpg" alt="Ghol Item">
                     <div class="gallery-overlay">
-                        <h3>Wedding Decor</h3>
-                        <p>Elegant floral arrangements</p>
+                        <h3>Ghol</h3>
+                        <p>Tasty Bhi, Healthy Bhi</p>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="venues">
-                    <img src="/api/placeholder/300/200" alt="Venue">
+                <div class="gallery-item" data-category="Chutney">
+                    <img src="./assets/images/Coconut Chutney.jpg" alt="Chutney">
                     <div class="gallery-overlay">
-                        <h3>Garden Venue</h3>
-                        <p>Perfect for outdoor ceremonies</p>
+                        <h3>Sp. Coconut Chutney</h3>
+                        <p>A Taste of Paradise.</p>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="outfits">
-                    <img src="/api/placeholder/300/200" alt="Wedding Outfit">
+                <div class="gallery-item" data-category="Paste">
+                    <img src="/assets/images/Sambar Paste.webp" alt="SambarPaste">
                     <div class="gallery-overlay">
-                        <h3>Bridal Collection</h3>
-                        <p>Stunning designer lehengas</p>
+                        <h3>Sp. Sambar Paste</h3>
+                        <p>Perfect for Your Taste</p>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="events">
-                    <img src="/api/placeholder/300/200" alt="Wedding Event">
+                <div class="gallery-item" data-category="Masala">
+                    <img src="/assets/images/Sambar Masala.jpg" alt="SambarMasala">
                     <div class="gallery-overlay">
-                        <h3>Reception</h3>
-                        <p>Beautifully arranged reception hall</p>
+                        <h3>Sambar Masala</h3>
+                        <p>Taste the Tradition</p>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="decor">
-                    <img src="/api/placeholder/300/200" alt="Decor Item">
+                <div class="gallery-item" data-category="Ghol">
+                    <img src="/assets/images/Ghol.jpg" alt="Ghol Item">
                     <div class="gallery-overlay">
-                        <h3>Mandap Decoration</h3>
-                        <p>Traditional mandap with modern elements</p>
+                        <h3>Khiru (Ghol)</h3>
+                        <p>Feel The Home Made Taste</p>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="venues">
+                <!-- <div class="gallery-item" data-category="venues">
                     <img src="/api/placeholder/300/200" alt="Venue">
                     <div class="gallery-overlay">
                         <h3>Banquet Hall</h3>
                         <p>Spacious indoor venue</p>
                     </div>
-                </div>
+                </div> -->
             </div>
             <button id="load-more" class="btn secondary">Load More</button>
         </div>
@@ -275,43 +299,43 @@
             <div class="testimonial-slider">
                 <div class="testimonial-slide">
                     <div class="testimonial-content">
-                        <p>"Sangam Ghol made our wedding day absolutely perfect. Their attention to detail and exceptional service exceeded our expectations."</p>
+                        <p>"Sangam Ghol made our first order absolutely perfect. Their attention to detail and exceptional service exceeded our expectations."</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-image">
-                            <img src="/api/placeholder/60/60" alt="Testimonial Author">
+                            <img src="./assets/testimonials/Testimopnials_1.jpg" alt="Testimonial Author">
                         </div>
                         <div class="author-info">
-                            <h4>Priya & Rahul</h4>
-                            <span>Married on March 15, 2024</span>
+                            <h4>Ayush Vadodariya</h4>
+                            <span>Book order on March 15, 2024</span>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-slide">
                     <div class="testimonial-content">
-                        <p>"The team at Sangam Ghol was incredibly professional and helpful throughout the entire planning process. They made everything stress-free!"</p>
+                        <p>"The Team at Sangam Ghol was incredibly professional and helpful throughout the process of delivering items. They made everything stress-free!"</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-image">
-                            <img src="/api/placeholder/60/60" alt="Testimonial Author">
+                            <img src="./assets/testimonials/Testimonials_3.jpg" alt="Testimonial Author">
                         </div>
                         <div class="author-info">
-                            <h4>Ananya & Vikram</h4>
-                            <span>Married on February 22, 2024</span>
+                            <h4>Dhyan Patel</h4>
+                            <span>Order on February 22, 2024</span>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-slide">
                     <div class="testimonial-content">
-                        <p>"From the decorations to the catering, everything was perfect. Our guests couldn't stop raving about how beautiful everything looked!"</p>
+                        <p>"From the catering, everything was perfect. Our guests couldn't stop raving about how beautiful everything deliverd looks!"</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-image">
-                            <img src="/api/placeholder/60/60" alt="Testimonial Author">
+                            <img src="./assets/testimonials/Testimonials_2.jpg" alt="Testimonial Author">
                         </div>
                         <div class="author-info">
-                            <h4>Meera & Arjun</h4>
-                            <span>Married on January 10, 2024</span>
+                            <h4>Mann Solanki</h4>
+                            <span>Order on January 10, 2024</span>
                         </div>
                     </div>
                 </div>
@@ -335,8 +359,12 @@
                         </div>
                         <div class="info-content">
                             <h3>Address</h3>
-                            <p><b>Shop 1:</b> Near Power House, Sumerpur, Rajasthan 306902</p>
-                            <p><b>Shop 2:</b> Sabji Mandi, Sheoganj, Rajasthan 307027</p>
+                            <p><b>Shop 1:</b>
+                                <a href="https://maps.app.goo.gl/nT1VhrRxBbEvJdg58" target="_blank">Near Power House, Sumerpur, Rajasthan 306902</a>
+                            </p>
+                            <p><b>Shop 2:</b> 
+                                <a href="https://maps.app.goo.gl/fgXRkyfX6izhhouEA" target="_blank">Sabji Mandi, Sheoganj, Rajasthan 307027</a>
+                            </p>
                         </div>
                     </div>
                     <div class="info-item">
@@ -432,11 +460,9 @@
                 <div class="footer-column">
                     <h3>Services</h3>
                     <ul class="footer-links">
-                        <li><a href="#booking">Wedding Planning</a></li>
-                        <li><a href="#booking">Decor Items</a></li>
-                        <li><a href="#booking">Wedding Outfits</a></li>
-                        <li><a href="#booking">Catering</a></li>
-                        <li><a href="#booking">Photography</a></li>
+                        <li><a href="#booking">Item Booking</a></li>
+                        <li><a href="#booking">Wedding Packages</a></li>
+                        <li><a href="#booking">Catering (Ghol)</a></li>
                         <li><a href="#booking">Transportation</a></li>
                     </ul>
                 </div>

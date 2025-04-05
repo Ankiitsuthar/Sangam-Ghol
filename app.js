@@ -66,10 +66,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (itemCategory && itemName) {
         const itemOptions = {
-            decor: ['Wedding Arch', 'Table Centerpieces', 'Stage Decoration', 'Lighting Setup', 'Flower Arrangements'],
-            outfit: ['Bridal Lehenga', 'Groom Sherwani', 'Saree', 'Indo-Western Suit', 'Kids Outfit'],
-            jewelry: ['Bridal Set', 'Wedding Necklace', 'Earrings', 'Maang Tikka', 'Bangles Set'],
-            accessories: ['Wedding Turbans', 'Dupatta', 'Wedding Footwear', 'Clutch Bags', 'Brooches']
+            Ghol: ['Idli Ghol', 'Dosa Ghol', 'Uttapa Ghol', 'Appam Vada Ghol', 'White Khaman Dhokla Ghol','Yellow Khaman Dhokla Ghol','Handva Ghol','Mehandu Vada Ghol','Dalwada Ghol','Dahi Vada Ghol'],
+            ChutneySambarPaste: ['Sp. Coconut Chutney', 'Sp. Sambar Paste'],
+            SambarMasala: ['Sambar Masala']
         };
         
         itemCategory.addEventListener('change', function() {
@@ -97,18 +96,19 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Sample gallery items
     const galleryItems = [
-        { id: 1, category: 'decor', image: '/api/placeholder/600/600', title: 'Wedding Stage Decor' },
-        { id: 2, category: 'venues', image: '/api/placeholder/600/600', title: 'Banquet Hall Setup' },
-        { id: 3, category: 'outfits', image: '/api/placeholder/600/600', title: 'Designer Bridal Collection' },
-        { id: 4, category: 'events', image: '/api/placeholder/600/600', title: 'Sangeet Ceremony' },
-        { id: 5, category: 'decor', image: '/api/placeholder/600/600', title: 'Table Arrangements' },
-        { id: 6, category: 'venues', image: '/api/placeholder/600/600', title: 'Garden Venue' },
-        { id: 7, category: 'outfits', image: '/api/placeholder/600/600', title: 'Groom Collection' },
-        { id: 8, category: 'events', image: '/api/placeholder/600/600', title: 'Haldi Ceremony' },
-        { id: 9, category: 'decor', image: '/api/placeholder/600/600', title: 'Wedding Entrance' },
-        { id: 10, category: 'venues', image: '/api/placeholder/600/600', title: 'Resort Wedding' },
-        { id: 11, category: 'outfits', image: '/api/placeholder/600/600', title: 'Traditional Outfits' },
-        { id: 12, category: 'events', image: '/api/placeholder/600/600', title: 'Mehendi Function' },
+        { id: 1, category: 'Ghol', image: '/assets/images/Idali_Ghol.jpg', title: 'Idali' },
+        { id: 2, category: 'Ghol', image: '/assets/images/Dosa_Ghol.jpg', title: 'Dosa' },
+        { id: 3, category: 'Ghol', image: '/assets/images/Uttapa Gol.webp', title: 'Uttapa' },
+        { id: 4, category: 'Ghol', image: '/assets/images/Appam Vada Ghol.jpeg', title: 'Appam Vada' },
+        { id: 5, category: 'Ghol', image: '/assets/images/White Khaman Dhokla Ghol.webp', title: 'White Khaman Dhokla' },
+        { id: 6, category: 'Ghol', image: '/assets/images/Yellow Khaman Dhokla Batter.webp', title: 'Yellow Khaman Dhokla' },
+        { id: 7, category: 'Ghol', image: '/assets/images/Handva Batter.webp', title: 'Handva' },
+        { id: 8, category: 'Ghol', image: '/assets/images/Mehandu Vada Batter.jpeg', title: 'Mehandu Vada' },
+        { id: 9, category: 'Ghol', image: '/assets/images/Dalwada Batter.jpeg', title: 'Dalwada' },
+        { id: 10, category: 'Ghol', image: '/assets/images/Dahi Vada Batter.jpeg', title: 'Dahi Vada' },
+        { id: 11, category: 'Chutney', image: '/assets/images/Coconut Chutney.jpg', title: 'Sp. Coconut Chutney' },
+        { id: 12, category: 'Paste', image: '/assets/images/Sambar Paste.webp', title: 'Sp. Sambar Paste' },
+        { id: 13, category: 'Masala', image: '/assets/images/Sambar Masala.jpg', title: 'Sambar Masala' },
     ];
     
     let currentItems = 8; // Number of items to show initially
