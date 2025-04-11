@@ -253,6 +253,49 @@ document.addEventListener('DOMContentLoaded', function() {
             goToSlide(newIndex);
         }, 5000);
     }
+
+
+
+    // //Testimonials Dynamically updates
+    // const testimonialContainer = document.querySelector('.testimonial-slider');
+        
+    // function fetchTestimonials() {
+    //     var xhr = new XMLHttpRequest();
+    //     xhr.open('GET', '/api/testimonials', true);
+
+    //     xhr.onreadystatechange = function() {
+    //         if (xhr.readyState === 4 && xhr.status === 200) {
+    //             var testimonials = JSON.parse(xhr.responseText);
+    //             testimonialContainer.innerHTML = ''; // Clear existing content
+                
+    //             testimonials.forEach(function(testimonial) {
+    //                 var slide = document.createElement('div');
+    //                 slide.className = 'testimonial-slide';
+    //                 slide.innerHTML = `
+    //                     <div class="testimonial-content">
+    //                         <p>"${testimonial.review}"</p>
+    //                     </div>
+    //                     <div class="testimonial-author">
+    //                         <div class="author-image">
+    //                             <img src="${testimonial.imageUrl}" alt="Testimonial Author">
+    //                         </div>
+    //                         <div class="author-info">
+    //                             <h4>${testimonial.name}</h4>
+    //                             <span>Order on ${new Date(testimonial.date).toDateString()}</span>
+    //                         </div>
+    //                     </div>
+    //                 `;
+    //                 testimonialContainer.appendChild(slide);
+    //             });
+
+    //             initializeSlider(); // Ensure slider works properly after dynamic loading
+    //         }
+    //     };
+
+    //     xhr.send();
+    // }
+
+    // fetchTestimonials();
     
     // Form submissions
     const itemsForm = document.getElementById('items-form');

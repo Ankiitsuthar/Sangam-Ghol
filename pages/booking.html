@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/YOUR_KIT_CODE.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
+    <title>Booking</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <div class="logo-image">
+                    <img src="../assets/images/New_Logo.svg" alt="Idli Sambar Logo">
+                </div>
+                <h1>Sangam Ghol</h1>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html">Services</a></li>
+                <li><a href="./booking.html">Booking</a></li>
+                <li><a href="../index.html">Gallery</a></li>
+                <li><a href="./contect.html">Contact</a></li>
+                <li class="cta-button"><a href="#account">My Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="section-title">Make a Booking</h2>
+            <div class="booking-tabs">
+                <div class="tab-header">
+                    <button class="tab-btn active" data-tab="items">Items</button>
+                    <button class="tab-btn" data-tab="appointment">Appointment</button>
+                    <button class="tab-btn" data-tab="wedding">Wedding Package</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="items-tab">
+                        <form id="items-form" class="booking-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="item-category">Category</label>
+                                    <select id="item-category" name="category" required>
+                                        <option value="">Select Category</option>
+                                        <option value="Ghol">Ghol (Khiru)</option>
+                                        <option value="ChutneySambarPaste">Sp. Coconut Chutney & Sambar Past</option>
+                                        <option value="SambarMasala">Sambar Masala</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="item-name">Item Name</label>
+                                    <select id="item-name" name="itemName" required>
+                                        <option value="">Select Item</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="item-quantity">Quantity (in kg)</label>
+                                    <input type="number" id="item-quantity" name="quantity" min="1" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="item-date">Required Date</label>
+                                    <input type="date" id="item-date" name="date" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="item-notes">Special Instructions Ghol(Khiru)</label>
+                                <textarea id="item-notes" name="notes" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn primary">Book Item</button>
+                        </form>
+                    </div>
+                    <div class="tab-pane" id="appointment-tab">
+                        <form id="appointment-form" class="booking-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="appointment-type">Appointment Type</label>
+                                    <select id="appointment-type" name="type" required>
+                                        <option value="">Select Type</option>
+                                        <option value="Wedding">Wedding</option>
+                                        <option value="Birthday">Birthday</option>
+                                        <option value="Vendor">Shop & Vendor</option>
+                                        <option value="Other">Other Functions</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="appointment-date">Preferred Date</label>
+                                    <input type="date" id="appointment-date" name="date" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="item-category">Category</label>
+                                    <select id="item-category" name="category" required>
+                                        <option value="">Select Category</option>
+                                        <option value="Ghol">Ghol (Khiru)</option>
+                                        <option value="ChutneySambarPaste">Sp. Coconut Chutney & Sambar Past</option>
+                                        <option value="SambarMasala">Sambar Masala</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="item-name">Item Name</label>
+                                    <select id="item-name" name="itemName" required>
+                                        <option value="">Select Item</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+
+
+                            <!-- <div class="form-row">
+                                <div class="form-group">
+                                    <label for="appointment-time">Preferred Time</label>
+                                    <input type="time" id="appointment-time" name="time" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="appointment-guests">Number of Guests</label>
+                                    <input type="number" id="appointment-guests" name="guests" min="1" required>
+                                </div>
+                            </div> -->
+                            <div class="form-group">
+                                <label for="appointment-notes">Special Requirements</label>
+                                <textarea id="appointment-notes" name="notes" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn primary">Book Appointment</button>
+                        </form>
+                    </div>
+                    <!-- <div class="tab-pane" id="wedding-tab">
+                        <form id="wedding-form" class="booking-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="wedding-package">Wedding Package</label>
+                                    <select id="wedding-package" name="package" required>
+                                        <option value="">Select Package</option>
+                                        <option value="basic">Basic Package</option>
+                                        <option value="standard">Standard Package</option>
+                                        <option value="premium">Premium Package</option>
+                                        <option value="luxury">Luxury Package</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="wedding-date">Wedding Date</label>
+                                    <input type="date" id="wedding-date" name="date" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="wedding-venue">Venue Preference</label>
+                                    <select id="wedding-venue" name="venue" required>
+                                        <option value="">Select Venue</option>
+                                        <option value="banquet">Banquet Hall</option>
+                                        <option value="garden">Garden</option>
+                                        <option value="resort">Resort</option>
+                                        <option value="temple">Temple</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="wedding-guests">Number of Guests</label>
+                                    <input type="number" id="wedding-guests" name="guests" min="1" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="wedding-notes">Special Requirements</label>
+                                <textarea id="wedding-notes" name="notes" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn primary">Book Wedding Package</button>
+                        </form>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <h2>Sangam Ghol</h2>
+                    </div>
+                    <p>“Life is better with a side of chutney and steaming idlis!”</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html">Services</a></li>
+                        <li><a href="./booking.html">Booking</a></li>
+                        <li><a href="../index.html">Gallery</a></li>
+                        <li><a href="../index.html">Testimonials</a></li>
+                        <li><a href="./contect.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="./booking.html">Item Booking</a></li>
+                        <li><a href="./booking.html">Wedding Packages</a></li>
+                        <li><a href="./booking.html">Catering (Ghol)</a></li>
+                        <li><a href="./booking.html">Transportation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest updates and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email Address" required>
+                            <button type="submit" class="btn primary">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sangam Ghol. All Rights Reserved.</p>
+                <ul class="footer-bottom-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../main.js"></script>
+</body>
+</html>

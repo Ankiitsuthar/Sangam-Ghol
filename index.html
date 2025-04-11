@@ -24,9 +24,9 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#booking">Booking</a></li>
+                <li><a href="./pages/booking.html">Booking</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="./pages/contect.html">Contact</a></li>
                 <li class="cta-button"><a href="#account">My Account</a></li>
             </ul>
         </nav>
@@ -38,7 +38,7 @@
             <h1>Welcome to Sangam Ghol</h1>
             <p>Your premier destination for all Ghols(Khiru) and Coconut Chutney needs</p>
             <div class="hero-buttons">
-                <a href="#booking" class="btn primary">Book Now</a>
+                <a href="./pages/booking.html" class="btn primary">Book Now</a>
                 <a href="#services" class="btn secondary">Our Services</a>
             </div>
         </div>
@@ -54,7 +54,7 @@
                     </div>
                     <h3>Items Booking</h3>
                     <p>Book fresh Ghol(Khiru), Chutneys, and Masalas for your home, Shops, weddings, and special events.</p>
-                    <a href="#booking" class="service-link">Book Items</a>
+                    <a href="./pages/booking.html" class="service-link">Book Items</a>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
@@ -62,7 +62,7 @@
                     </div>
                     <h3>Appointments</h3>
                     <p>Schedule a Appointment for bulk orders for weddings and events.</p>
-                    <a href="#booking" class="service-link">Book Appointment</a>
+                    <a href="./pages/booking.html" class="service-link">Book Appointment</a>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
@@ -70,7 +70,7 @@
                     </div>
                     <h3>Marriage Packages</h3>
                     <p>Complete wedding Ghol packages for a hassle-free experience</p>
-                    <a href="#booking" class="service-link">Book Package</a>
+                    <a href="./pages/booking.html" class="service-link">Book Package</a>
                 </div>
                 <!-- <div class="service-card">
                     <div class="service-icon">
@@ -84,155 +84,6 @@
         </div>
     </section>
 
-    <section id="booking" class="booking">
-        <div class="container">
-            <h2 class="section-title">Make a Booking</h2>
-            <div class="booking-tabs">
-                <div class="tab-header">
-                    <button class="tab-btn active" data-tab="items">Items</button>
-                    <button class="tab-btn" data-tab="appointment">Appointment</button>
-                    <button class="tab-btn" data-tab="wedding">Wedding Package</button>
-                </div>
-                <div class="tab-content">
-                    <div class="tab-pane active" id="items-tab">
-                        <form id="items-form" class="booking-form">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="item-category">Category</label>
-                                    <select id="item-category" name="category" required>
-                                        <option value="">Select Category</option>
-                                        <option value="Ghol">Ghol (Khiru)</option>
-                                        <option value="ChutneySambarPaste">Sp. Coconut Chutney & Sambar Past</option>
-                                        <option value="SambarMasala">Sambar Masala</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="item-name">Item Name</label>
-                                    <select id="item-name" name="itemName" required>
-                                        <option value="">Select Item</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="item-quantity">Quantity</label>
-                                    <input type="number" id="item-quantity" name="quantity" min="1" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="item-date">Required Date</label>
-                                    <input type="date" id="item-date" name="date" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="item-notes">Special Instructions Ghol(Khiru) in kg</label>
-                                <textarea id="item-notes" name="notes" rows="3"></textarea>
-                            </div>
-                            <button type="submit" class="btn primary">Book Item</button>
-                        </form>
-                    </div>
-                    <div class="tab-pane" id="appointment-tab">
-                        <form id="appointment-form" class="booking-form">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="appointment-type">Appointment Type</label>
-                                    <select id="appointment-type" name="type" required>
-                                        <option value="">Select Type</option>
-                                        <option value="Wedding">Wedding</option>
-                                        <option value="Birthday">Birthday</option>
-                                        <option value="Vendor">Shop & Vendor</option>
-                                        <option value="Other">Other Functions</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="appointment-date">Preferred Date</label>
-                                    <input type="date" id="appointment-date" name="date" required>
-                                </div>
-                            </div>
-
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="item-category">Category</label>
-                                    <select id="item-category" name="category" required>
-                                        <option value="">Select Category</option>
-                                        <option value="Ghol">Ghol (Khiru)</option>
-                                        <option value="ChutneySambarPaste">Sp. Coconut Chutney & Sambar Past</option>
-                                        <option value="SambarMasala">Sambar Masala</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="item-name">Item Name</label>
-                                    <select id="item-name" name="itemName" required>
-                                        <option value="">Select Item</option>
-                                    </select>
-                                </div>
-                            </div>
-
-
-
-
-                            <!-- <div class="form-row">
-                                <div class="form-group">
-                                    <label for="appointment-time">Preferred Time</label>
-                                    <input type="time" id="appointment-time" name="time" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="appointment-guests">Number of Guests</label>
-                                    <input type="number" id="appointment-guests" name="guests" min="1" required>
-                                </div>
-                            </div> -->
-                            <div class="form-group">
-                                <label for="appointment-notes">Special Requirements</label>
-                                <textarea id="appointment-notes" name="notes" rows="3"></textarea>
-                            </div>
-                            <button type="submit" class="btn primary">Book Appointment</button>
-                        </form>
-                    </div>
-                    <div class="tab-pane" id="wedding-tab">
-                        <form id="wedding-form" class="booking-form">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="wedding-package">Wedding Package</label>
-                                    <select id="wedding-package" name="package" required>
-                                        <option value="">Select Package</option>
-                                        <option value="basic">Basic Package</option>
-                                        <option value="standard">Standard Package</option>
-                                        <option value="premium">Premium Package</option>
-                                        <option value="luxury">Luxury Package</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="wedding-date">Wedding Date</label>
-                                    <input type="date" id="wedding-date" name="date" required>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="wedding-venue">Venue Preference</label>
-                                    <select id="wedding-venue" name="venue" required>
-                                        <option value="">Select Venue</option>
-                                        <option value="banquet">Banquet Hall</option>
-                                        <option value="garden">Garden</option>
-                                        <option value="resort">Resort</option>
-                                        <option value="temple">Temple</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="wedding-guests">Number of Guests</label>
-                                    <input type="number" id="wedding-guests" name="guests" min="1" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="wedding-notes">Special Requirements</label>
-                                <textarea id="wedding-notes" name="notes" rows="3"></textarea>
-                            </div>
-                            <button type="submit" class="btn primary">Book Wedding Package</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section id="gallery" class="gallery">
         <div class="container">
@@ -348,88 +199,8 @@
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contact Us</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="info-content">
-                            <h3>Address</h3>
-                            <p><b>Shop 1:</b>
-                                <a href="https://maps.app.goo.gl/nT1VhrRxBbEvJdg58" target="_blank">Near Power House, Sumerpur, Rajasthan 306902</a>
-                            </p>
-                            <p><b>Shop 2:</b> 
-                                <a href="https://maps.app.goo.gl/fgXRkyfX6izhhouEA" target="_blank">Sabji Mandi, Sheoganj, Rajasthan 307027</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div class="info-content">
-                            <h3>Phone</h3>
-                            <p>+91 70730 11772</p>
-                            <p>+91 96363 76390</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="info-content">
-                            <h3>Email</h3>
-                            <p>info@sangamghol.com</p>
-                            <p>bookings@sangamghol.com</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="info-content">
-                            <h3>Business Hours</h3>
-                            <p>Monday - Saturday: 10:00 AM - 8:00 PM</p>
-                            <p>Sunday: 11:00 AM - 8:00 PM</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contact-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="contact-name">Your Name</label>
-                                <input type="text" id="contact-name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="contact-email">Email Address</label>
-                                <input type="email" id="contact-email" name="email" required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="contact-phone">Phone Number</label>
-                                <input type="tel" id="contact-phone" name="phone" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="contact-subject">Subject</label>
-                                <input type="text" id="contact-subject" name="subject" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-message">Your Message</label>
-                            <textarea id="contact-message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+   
+    
 
     <footer class="footer">
         <div class="container">
@@ -451,18 +222,18 @@
                     <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#booking">Booking</a></li>
+                        <li><a href="./pages/booking.html">Booking</a></li>
                         <li><a href="#gallery">Gallery</a></li>
                         <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="./pages/contect.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Services</h3>
                     <ul class="footer-links">
-                        <li><a href="#booking">Item Booking</a></li>
-                        <li><a href="#booking">Wedding Packages</a></li>
-                        <li><a href="#booking">Catering (Ghol)</a></li>
+                        <li><a href="./pages/booking.html">Item Booking</a></li>
+                        <li><a href="./pages/booking.html">Wedding Packages</a></li>
+                        <li><a href="./pages/booking.html">Catering (Ghol)</a></li>
                         <li><a href="#booking">Transportation</a></li>
                     </ul>
                 </div>
@@ -488,6 +259,6 @@
         </div>
     </footer>
 
-    <script src="./app.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
