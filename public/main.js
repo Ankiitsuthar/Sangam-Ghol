@@ -88,6 +88,36 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+
+    // Dynamic item loading based on Appointment Category selection
+    const appointmentitemcategory = document.getElementById('appointment-item-category');
+    const appointmentitemname = document.getElementById('appointment-item-name');
+    
+    if (appointmentitemcategory && appointmentitemname) {
+        const itemOptions = {
+            Ghol: ['Idli Ghol', 'Dosa Ghol', 'Uttapa Ghol', 'Appam Vada Ghol', 'White Khaman Dhokla Ghol','Yellow Khaman Dhokla Ghol','Handva Ghol','Mehandu Vada Ghol','Dalwada Ghol','Dahi Vada Ghol'],
+            ChutneySambarPaste: ['Sp. Coconut Chutney', 'Sp. Sambar Paste'],
+            SambarMasala: ['Sambar Masala']
+        };
+        
+        appointmentitemcategory.addEventListener('change', function() {
+            const category = this.value;
+            
+            // Clear existing options
+            appointmentitemname.innerHTML = '<option value="">Select Item</option>';
+            
+            // Add new options based on selected category
+            if (category && itemOptions[category]) {
+                itemOptions[category].forEach(item => {
+                    const option = document.createElement('option');
+                    option.value = item.toLowerCase().replace(/ /g, '-');
+                    option.textContent = item;
+                    appointmentitemname.appendChild(option);
+                });
+            }
+        });
+    }
     
     // Gallery functionality
     const filterButtons = document.querySelectorAll('.filter-btn');
@@ -300,8 +330,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Form submissions
     const itemsForm = document.getElementById('items-form');
     const appointmentForm = document.getElementById('appointment-form');
-    const weddingForm = document.getElementById('wedding-form');
+    // const weddingForm = document.getElementById('wedding-form');
     const contactForm = document.getElementById('contact-form');
+    const newsletterForm = document.getElementById('newsletter-form')
     
     // Generic form submission handler
     function handleFormSubmit(form, endpoint) {
@@ -311,11 +342,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 const formData = new FormData(form);
                 const formObject = {};
-                
+    
                 formData.forEach((value, key) => {
-                    formObject[key] = value;
+                    if (formObject[key]) {
+                        if (!Array.isArray(formObject[key])) {
+                            formObject[key] = [formObject[key]];
+                        }
+                        formObject[key].push(value);
+                    } else {
+                        formObject[key] = value;
+                    }
                 });
-                
+    
                 try {
                     const response = await fetch(`/api/${endpoint}`, {
                         method: 'POST',
@@ -324,9 +362,9 @@ document.addEventListener('DOMContentLoaded', function() {
                         },
                         body: JSON.stringify(formObject)
                     });
-                    
+    
                     const data = await response.json();
-                    
+    
                     if (response.ok) {
                         showNotification('Success', data.message, 'success');
                         form.reset();
@@ -341,11 +379,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
+    
     // Setup form submissions
     handleFormSubmit(itemsForm, 'bookings/items');
     handleFormSubmit(appointmentForm, 'bookings/appointments');
-    handleFormSubmit(weddingForm, 'bookings/weddings');
+    // handleFormSubmit(weddingForm, 'bookings/weddings');
     handleFormSubmit(contactForm, 'contact');
+    handleFormSubmit(newsletterForm, 'newsletter');
     
     // Notification function
     function showNotification(title, message, type) {
