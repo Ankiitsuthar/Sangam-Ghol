@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
 
 </head>
+
 <body>
     <header>
         <nav>
@@ -53,7 +55,8 @@
                         <i class="fas fa-gift"></i>
                     </div>
                     <h3>Items Booking</h3>
-                    <p>Book fresh Ghol(Khiru), Chutneys, and Masalas for your home, Shops, weddings, and special events.</p>
+                    <p>Book fresh Ghol(Khiru), Chutneys, and Masalas for your home, Shops, weddings, and special events.
+                    </p>
                     <a href="./pages/booking.html" class="service-link">Book Items</a>
                 </div>
                 <div class="service-card">
@@ -84,7 +87,7 @@
         </div>
     </section>
 
-
+    <!-- Modify your gallery section in index.html to make items clickable -->
     <section id="gallery" class="gallery">
         <div class="container">
             <h2 class="section-title">Our Gallery</h2>
@@ -96,53 +99,57 @@
                 <button class="filter-btn" data-filter="Masala">Sambar Masala</button>
             </div>
             <div class="gallery-grid">
-                <!-- Gallery items will be dynamically loaded here -->
+                <!-- Gallery items with proper titles for the modal -->
                 <div class="gallery-item" data-category="Ghol">
-                    <img src="./assets/images/Ghol.jpg" alt="Ghol Item">
+                    <img src="./assets/images/Idali_Ghol.jpg" alt="Idli Ghol">
                     <div class="gallery-overlay">
-                        <h3>Ghol</h3>
-                        <p>Tasty Bhi, Healthy Bhi</p>
+                        <h3>Idli Ghol</h3>
+                        <span>Ghol</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Ghol">
+                    <img src="./assets/images/Dosa_Ghol.jpg" alt="Dosa Ghol">
+                    <div class="gallery-overlay">
+                        <h3>Dosa Ghol</h3>
+                        <span>Ghol</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Ghol">
+                    <img src="./assets/images/Uttapa Gol.webp" alt="Uttapa Ghol">
+                    <div class="gallery-overlay">
+                        <h3>Uttapa Ghol</h3>
+                        <span>Ghol</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="Chutney">
-                    <img src="./assets/images/Coconut Chutney.jpg" alt="Chutney">
+                    <img src="./assets/images/Coconut Chutney.jpg" alt="Coconut Chutney">
                     <div class="gallery-overlay">
                         <h3>Sp. Coconut Chutney</h3>
-                        <p>A Taste of Paradise.</p>
+                        <span>Chutney</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="Paste">
-                    <img src="/assets/images/Sambar Paste.webp" alt="SambarPaste">
+                    <img src="./assets/images/Sambar Paste.webp" alt="Sambar Paste">
                     <div class="gallery-overlay">
                         <h3>Sp. Sambar Paste</h3>
-                        <p>Perfect for Your Taste</p>
+                        <span>Paste</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="Masala">
-                    <img src="/assets/images/Sambar Masala.jpg" alt="SambarMasala">
+                    <img src="./assets/images/Sambar Masala.jpg" alt="Sambar Masala">
                     <div class="gallery-overlay">
                         <h3>Sambar Masala</h3>
-                        <p>Taste the Tradition</p>
+                        <span>Masala</span>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="Ghol">
-                    <img src="/assets/images/Ghol.jpg" alt="Ghol Item">
-                    <div class="gallery-overlay">
-                        <h3>Khiru (Ghol)</h3>
-                        <p>Feel The Home Made Taste</p>
-                    </div>
-                </div>
-                <!-- <div class="gallery-item" data-category="venues">
-                    <img src="/api/placeholder/300/200" alt="Venue">
-                    <div class="gallery-overlay">
-                        <h3>Banquet Hall</h3>
-                        <p>Spacious indoor venue</p>
-                    </div>
-                </div> -->
+                <!-- Additional items will be loaded dynamically -->
             </div>
             <button id="load-more" class="btn secondary">Load More</button>
         </div>
     </section>
+
+
+
 
     <section id="testimonials" class="testimonials">
         <div class="container">
@@ -150,7 +157,8 @@
             <div class="testimonial-slider">
                 <div class="testimonial-slide">
                     <div class="testimonial-content">
-                        <p>"Sangam Ghol made our first order absolutely perfect. Their attention to detail and exceptional service exceeded our expectations."</p>
+                        <p>"Sangam Ghol made our first order absolutely perfect. Their attention to detail and
+                            exceptional service exceeded our expectations."</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-image">
@@ -164,7 +172,8 @@
                 </div>
                 <div class="testimonial-slide">
                     <div class="testimonial-content">
-                        <p>"The Team at Sangam Ghol was incredibly professional and helpful throughout the process of delivering items. They made everything stress-free!"</p>
+                        <p>"The Team at Sangam Ghol was incredibly professional and helpful throughout the process of
+                            delivering items. They made everything stress-free!"</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-image">
@@ -178,7 +187,8 @@
                 </div>
                 <div class="testimonial-slide">
                     <div class="testimonial-content">
-                        <p>"From the catering, everything was perfect. Our guests couldn't stop raving about how beautiful everything deliverd looks!"</p>
+                        <p>"From the catering, everything was perfect. Our guests couldn't stop raving about how
+                            beautiful everything deliverd looks!"</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-image">
@@ -199,8 +209,8 @@
         </div>
     </section>
 
-   
-    
+
+
 
     <footer class="footer">
         <div class="container">
@@ -261,4 +271,5 @@
 
     <script src="./main.js"></script>
 </body>
+
 </html>
