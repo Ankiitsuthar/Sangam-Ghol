@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const title = this.querySelector('h3').textContent;
                 const category = this.getAttribute('data-category');
                 const imgSrc = this.querySelector('img').src;
-                const price = productPrices[title] || 50; // Default price if not found
+                const price = productPrices[title] || 60; // Default price if not found
 
                 // Set modal content
                 productImage.src = imgSrc;
@@ -269,7 +269,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <p class="product-category"></p>
                         <p class="product-description">Fresh and homemade, perfect for your daily needs.</p>
                         <div class="product-price">
-                            <span class="price">₹50.00</span> per kg
+                            <span class="price">₹60.00</span> per kg
                         </div>
                         <div class="product-quantity">
                             <label for="quantity">Quantity:</label>
@@ -288,7 +288,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             </div>
                         </div>
                         <div class="product-total">
-                            <strong>Total: </strong><span class="total-price">₹50.00</span>
+                            <strong>Total: </strong><span class="total-price">₹60.00</span>
                         </div>
                         <button class="btn primary add-to-cart-btn">Add to Cart</button>
                     </div>
